@@ -99,30 +99,32 @@
             <div class="container" style="display: flex; margin-left: 10px; justify-content: space-between; align-items: center;">
                 <a href="#" class="logo" style="color: #000000; font-size: 24px; text-decoration: none;">
                     <img src="assets/Main 9.png" alt="" style="vertical-align: middle;">Edusama
-                    <div style="margin-left: 66px; margin-top: -18px;">
+                    <div style="margin-left: 66px; margin-top: -10px;">
                         <span style="font-size: 16px;">Edukasi Bersama</span>
                     </div>
                 </a>
                 <ul class="menu" style="list-style-type: none; margin: 0; padding: 0;">
                     <li style="display: inline-block; margin-right: 20px;">
-                        <a href="#" style="color: #000000; text-decoration: none;">Beranda</a>
+                        <a href="index.html" style="color: #000000; text-decoration: none;">Beranda</a>
                     </li>
                     <li class="dropdown" style="display: inline-block; margin-right: 20px; position: relative;">
-                        <a href="#" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
+                        <a href="katalog.html" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
                         <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; z-index: 1;">
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
                         </div>
                     </li>
                     <li style="display: inline-block; margin-right: 20px;">
-                        <a href="#" style="color: #000000; text-decoration: none;">Tentang Kami</a>
+                        <a href="notfound.html" style="color: #000000; text-decoration: none;">Tentang Kami</a>
                     </li>
                 </ul>
                 <div class="buttons" style="display: flex; align-items: center;">
-                    <a href="#" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
-                    <a href="#" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
-                    <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                    <a href="notfound.html" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
+                    <a href="notfound.html" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
+                    <a href="notfound.html">
+                        <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -217,42 +219,67 @@
                 </div>
             </section>
             
-            <div class="container">
-                <section style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
-                    <!-- Card 1 -->
-                    <div class="card" style="flex: 1; margin-right: 20px;">
-                        <div class="card-image" style="background-image: url('assets/gambar2.png'); height: 350px; width:230px;">
-                            <!-- Isi Card 1 -->
-                            <div style="background-color: rgba(0, 0, 0, 0.7); color: #ffffff; padding: 10px;">
-                                <h3>Judul Buku 1</h3>
-                                <p>Jenis: Audio</p>
+            <section class="industries-page industries-page--carousel">
+                <div class="container">
+                    <div class="thm-owl__carousel owl-carousel owl-theme owl-with-shadow owl-dots__style-1"
+                        data-owl-options='{
+                        "loop": true,
+                        "items": 1,
+                        "autoplay": true,
+                        "margin": 30,
+                        "nav": false,
+                        "dots": true,
+                        "smartSpeed": 500,
+                        "autoplayTimeout": 5000,
+                        "responsive": {
+                            "0": {
+                                "items": 1
+                            },
+                            "768": {
+                                "items": 2
+                            },
+                            "992": {
+                                "items": 3
+                            }
+                        }
+                    }'>
+                <div style="padding: 0 0 100px 100px;">
+                    <div class="section-title text-center">
+                        <h2 class="section-title__title">Rekomendasi Buku</h2>
+                    </div>
+                    <br>
+                    <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 50px;">
+                        <div class="item">
+                            <div class="industries-one__single">
+                                <div class="industries-one__img">
+                                   <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="industries-one__single">
+                                <div class="industries-one__img">
+                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="industries-one__single">
+                                <div class="industries-one__img">
+                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="industries-one__single">
+                                <div class="industries-one__img">
+                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="card" style="flex: 1; margin-right: 10px;">
-                        <div class="card-image" style="background-image: url('assets/gambar1.png'); height: 350px; width:230px;">
-                            <!-- Isi Card 2 -->
-                            <div style="background-color: rgba(0, 0, 0, 0.7); color: #ffffff; padding: 10px;">
-                                <h3>Judul Buku 2</h3>
-                                <p>Jenis: PDF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="card" style="flex: 1;">
-                        <div class="card-image" style="background-image: url('assets/gambar3.png'); height: 350px; width:230px;">
-                            <!-- Isi Card 3 -->
-                            <div style="background-color: rgba(0, 0, 0, 0.7); color: #ffffff; padding: 10px;">
-                                <h3>Judul Buku 3</h3>
-                                <p>Jenis: Audio</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            
-            
+                </div>
+            </section>	  
             <section style="margin-top: 20px;">
                 <h3>Pertanyaan yang Sering Ditanyakan</h3>
                 <ul>
@@ -265,8 +292,7 @@
                     <li class="dropdown">
                         <span><b>Bagaimana cara mendaftar di Edusama?</b></span>
                         <div class="dropdown-content">
-                            <>Anda dapat mendaftar di Edusama dengan mengunjungi situs web</
-                                <p>kami dan mengikuti langkah-langkah pendaftaran yang tersedia.</p>
+                            <kami>Anda dapat mendaftar di Edusama dengan mengunjungi situs web <br> kami dan mengikuti langkah-langkah pendaftaran yang tersedia.</p>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -296,46 +322,57 @@
     <footer style="background-color: #F3F3F3; padding: 20px; text-align: center;">
         <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
             <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;">Edusama</h4>
-                <p style="margin: 5px 0;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca.</p>
+                <div style ="display: inline-grid;grid-template-columns:auto;">
+                <img src="assets/Main 9.png" alt="" style="vertical-align: middle ; height: 100%;"><h1 style="margin-top: -30px; margin-left: 30px;">Edusama</h1>
+                    <div style="margin-left: 240px; margin-top: -15px;">
+                        <span style="font-size: 15px;"></span>
+                    </div>
+                </div>
+               
+                <p style="text-align:justify; margin: 5px 15;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca.</p>
             </div>
             <div class="footer-column" style="flex: 1; margin: 10px;">
                 <h4 style="margin-bottom: 10px;">Company</h4>
-                <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 5px;"><a href="#">About Us</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Services</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Testimonial</a></li>
+                <ul style="list-style-type: none; padding:0;">
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">About Us</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Services</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Testimonial</a></li>
                 </ul>
             </div>
             <div class="footer-column" style="flex: 1; margin: 10px;">
                 <h4 style="margin-bottom: 10px;">Support</h4>
                 <img src="assets/qrcode.png" alt="QR Code" class="qrcode" style="width: 100px; margin-top: 10px;">
                 <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 5px;"><a href="#">Donate</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Help</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Feedback</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Donate</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Help</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Feedback</a></li>
                 </ul>
             </div>
             <div class="footer-column" style="flex: 1; margin: 10px;">
                 <h4 style="margin-bottom: 10px;">Links</h4>
                 <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 5px;"><a href="#">Buku</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Katalog</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Populer</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Buku</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Katalog</a></li>
+                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Populer</a></li>
                 </ul>
             </div>
             <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;">Contact Us</h4>
-                <p style="margin: 5px 0;">0859 9343 2343</p>
-                <p style="margin: 5px 0;">edusama@gmail.com</p>
+                <h4 style="margin-bottom: 10px;padding: 5px;">Contact Us</h4>
+                <p style="margin: 5px 0;padding: 5px;">0859 9343 2343</p>
+                <p style="margin: 5px 0;padding: 5px;">edusama@gmail.com</p>
             </div>
         </div>
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #070606;">
         <div class="copyright" style="font-size: 12px;">
-            <p>Copyright © 2024 Edusama. All rights reserved.</p>
-            <p><a href="#">Privacy</a>, <a href="#">Term Of Use</a>, <a href="#">Site Map</a></p>
+            <table></table>
+            <div style="text-align:left;">Copyright © 2024 Edusama. All rights reserved. </div>
+            
+            <div style="text-align:right;"><a href="#">Privacy</a>, <a href="#">Term Of Use</a>, <a href="#">Site Map</a></div> 
         </div>
     </footer>
+    
+</body>
+</html>
     <script>
         // JavaScript untuk menampilkan dropdown saat dihover
         document.querySelector('.dropdown').addEventListener('mouseover', function() {
