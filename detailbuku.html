@@ -108,6 +108,54 @@
             font-weight: bold;
         }
         
+        .industries-one__single {
+            position: relative;
+            display: block;
+            margin-bottom: 30px;
+        }
+        
+        .industries-one__img {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .industries-one__img:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+            transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+            content: "";
+            background-color: rgba(var(--wostin-black-rgb), 0.5);
+            z-index: 1;
+        }
+        .industries-one__single:hover .industries-one__img:before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+          }
+          
+          .industries-one__img img {
+            width: 100%;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+          }
+          
+          .industries-one__single:hover .industries-one__img img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+          }
+          
+        
     </style>
 </head>
 <body style="margin: 0; font-family: Arial, sans-serif; background-color:#F3F5FF;">
@@ -116,30 +164,32 @@
             <div class="container" style="display: flex; margin-left: 10px; justify-content: space-between; align-items: center;">
                 <a href="#" class="logo" style="color: #000000; font-size: 24px; text-decoration: none;">
                     <img src="assets/Main 9.png" alt="" style="vertical-align: middle;">Edusama
-                    <div style="margin-left: 66px; margin-top: -18px;">
+                    <div style="margin-left: 66px; margin-top: -10px;">
                         <span style="font-size: 16px;">Edukasi Bersama</span>
                     </div>
                 </a>
                 <ul class="menu" style="list-style-type: none; margin: 0; padding: 0;">
                     <li style="display: inline-block; margin-right: 20px;">
-                        <a href="#" style="color: #000000; text-decoration: none;">Beranda</a>
+                        <a href="index.html" style="color: #000000; text-decoration: none;">Beranda</a>
                     </li>
                     <li class="dropdown" style="display: inline-block; margin-right: 20px; position: relative;">
-                        <a href="#" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
+                        <a href="katalog.html" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
                         <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; z-index: 1;">
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
-                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
+                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
                         </div>
                     </li>
                     <li style="display: inline-block; margin-right: 20px;">
-                        <a href="#" style="color: #000000; text-decoration: none;">Tentang Kami</a>
+                        <a href="notfound.html" style="color: #000000; text-decoration: none;">Tentang Kami</a>
                     </li>
                 </ul>
                 <div class="buttons" style="display: flex; align-items: center;">
-                    <a href="#" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
-                    <a href="#" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
-                    <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                    <a href="notfound.html" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
+                    <a href="notfound.html" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
+                    <a href="notfound.html">
+                        <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -166,7 +216,6 @@
                                         <div class="info" style="text-align: justify;">
                                             <h2 style="font-size: 35px;">Bahasa Indonesia kelas XI</h2>
                                             <a class="download-link" href="unduh-buku-pdf-bahasa-indonesia-kelas-xi.pdf">Unduh PDF</a>
-                                            <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Buku Audio</a>
                                             <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Baca Online</a>
                                             <div class="report-error">
                                                 <a class="btn" href="lapor-kesalahan-buku.php">Lapor disini jika menemukan kesalahan pada buku</a>
@@ -190,6 +239,89 @@
                 </div>
             </div>   
         </section>
+        <section>
+            <!-- bagian komentar -->
+            <div class="container" style="justify-content:space-between; width: 90%; ; height: 40px;  margin-left: auto; margin-right: auto; padding: 10px; background-color: rgb(236, 233, 233); border-radius: 5px;">
+            
+                <div class="ulasan-container" style="display: flex; justify-content: space-between;">
+                    <div class="ulasan-text" style="display: flex; ">
+                        <img style="padding: 10px;" src="/assets/comment.png" alt="ikon komen" width="25px" height="25px">
+                        <p>1 Ulasan pembaca</p>
+                    </div>
+                    <a href="" class="square-button" style="display: flex; justify-content: center; align-items: center; height: 30px; margin-top: 7px;">Tulis Ulasanmu disini</a>
+                </div>
+        </div>
+        <div class="container" style="justify-content:space-between; width: 85%; ; height: 60px; margin-top: 20px;  margin-left: auto; margin-right: auto; padding: 20px; background-color: rgb(236, 233, 233); border-radius: 5px;">
+            <div class="ulasan-container" style="display: flex; justify-content: space-between;">
+                <div class="ulasan-text" style="display: flex; ">
+                    <img style="padding-left: 10px; padding-top: 2px; margin-right: 10px;"  src="/assets/profile.png" alt="ikon komen" width="60px" height="60px">
+                    <strong><p>Gigih Baskoro</p></strong>
+                   <p style="margin-left: -108px; margin-top: 35px;">keren bukunya aku jadi bisa ngobrol sama bule</p>
+                </div>
+        </div>
+         <!-- bagian komentar -->
+        </section>
+        <section class="industries-page industries-page--carousel">
+			<div class="container">
+				<div class="thm-owl__carousel owl-carousel owl-theme owl-with-shadow owl-dots__style-1"
+					data-owl-options='{
+					"loop": true,
+					"items": 1,
+					"autoplay": true,
+					"margin": 30,
+					"nav": false,
+					"dots": true,
+					"smartSpeed": 500,
+					"autoplayTimeout": 5000,
+					"responsive": {
+						"0": {
+							"items": 1
+						},
+						"768": {
+							"items": 2
+						},
+						"992": {
+							"items": 3
+						}
+					}
+				}'>
+            <div style="padding: 0 0 100px 100px;">
+                <div class="section-title text-center">
+                    <h2 class="section-title__title">Rekomendasi Buku</h2>
+                </div>
+                <br>
+                <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 50px;">
+                    <div class="item">
+                        <div class="industries-one__single">
+                            <div class="industries-one__img">
+                               <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="industries-one__single">
+                            <div class="industries-one__img">
+                                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="industries-one__single">
+                            <div class="industries-one__img">
+                                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="industries-one__single">
+                            <div class="industries-one__img">
+                                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>	
         <footer style="background-color: #F3F3F3; padding: 20px; text-align: center;">
             <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
                 <div class="footer-column" style="flex: 1; margin: 10px;">
