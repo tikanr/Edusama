@@ -4,49 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edusama</title>
+    <style>
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        li {
+            margin-bottom: 10px;
+        }
+    
+        h3 {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif;">
-    <nav class="navbar" style="background-color: #ffffff; color: #000000; padding: 10px 0;">
-        <div class="container" style="display: flex; margin-left: 10px; justify-content: space-between; align-items: center;">
-            <a href="#" class="logo" style="color: #000000; font-size: 24px; text-decoration: none;">
-                <img src="Main 9.png" alt="" style="vertical-align: middle;">Edusama
-                <div style="margin-left: 66px; margin-top: -18px;">
-                    <span style="font-size: 16px;">Edukasi Bersama</span>
-                </div>
-            </a>
-            <ul class="menu" style="list-style-type: none; margin: 0; padding: 0;">
-                <li style="display: inline-block; margin-right: 20px;">
-                    <a href="#" style="color: #000000; text-decoration: none;">Beranda</a>
-                </li>
-                <li class="dropdown" style="display: inline-block; margin-right: 20px; position: relative;">
-                    <a href="#" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
-                    <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; z-index: 1;">
-                        <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
-                        <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
-                        <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color:#F3F5FF;">
+    <header>
+        <nav class="navbar" style="background-color: #ffffff; color: #000000; padding: 10px 0; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+            <div class="container" style="display: flex; margin-left: 10px; justify-content: space-between; align-items: center;">
+                <a href="#" class="logo" style="color: #000000; font-size: 24px; text-decoration: none;">
+                    <img src="assets/Main 9.png" alt="" style="vertical-align: middle;">Edusama
+                    <div style="margin-left: 66px; margin-top: -18px;">
+                        <span style="font-size: 16px;">Edukasi Bersama</span>
                     </div>
-                </li>
-                <li style="display: inline-block; margin-right: 20px;">
-                    <a href="#" style="color: #000000; text-decoration: none;">Tentang Kami</a>
-                </li>
-            </ul>
-            <div class="buttons" style="display: flex; align-items: center;">
-                <a href="#" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
-                <a href="#" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
-                <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                </a>
+                <ul class="menu" style="list-style-type: none; margin: 0; padding: 0;">
+                    <li style="display: inline-block; margin-right: 20px;">
+                        <a href="#" style="color: #000000; text-decoration: none;">Beranda</a>
+                    </li>
+                    <li class="dropdown" style="display: inline-block; margin-right: 20px; position: relative;">
+                        <a href="#" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
+                        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; z-index: 1;">
+                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
+                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
+                            <a href="#" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
+                        </div>
+                    </li>
+                    <li style="display: inline-block; margin-right: 20px;">
+                        <a href="#" style="color: #000000; text-decoration: none;">Tentang Kami</a>
+                    </li>
+                </ul>
+                <div class="buttons" style="display: flex; align-items: center;">
+                    <a href="#" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
+                    <a href="#" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
+                    <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
+                </div>
+            </div>
+        </nav>
+        
+
+        <script>
+            // JavaScript untuk menampilkan dropdown saat dihover
+            document.querySelector('.dropdown').addEventListener('mouseover', function() {
+                document.querySelector('.dropdown-content').style.display = 'block';
+            });
+
+            document.querySelector('.dropdown').addEventListener('mouseout', function() {
+                document.querySelector('.dropdown-content').style.display = 'none';
+            });
+        </script>
+    </header>
+    <main style="display: flex;color: #6F50F8; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <aside style="flex: 1; padding: 10px; background-color: #fff;">
+            <h2 style="margin-bottom: 10px;">Tentang Edusama</h2>
+            <p>
+                Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca, khususnya bagi orang Indonesia yang mungkin masih belum bisa untuk membeli buku-buku karena keterbatasan finansial.
+            </p>
+        </aside>
+        
+        <main style="flex: 3; padding: 10px;">
+            <article>
+                <figure>
+                    <img src="assets/gambar.png" alt="Gambar" style="display: flex; height: 350px;">
+                    <figcaption style="text-align: center;"><h1>Bangun Dunia Untuk Generasi Emas</h1></figcaption>
+                </figure>
+                <p>
+                    Berbagi buku tentang kehidupan dan pengalaman</p> dengan orang lain Itu adalah catatan seumur hidup untuk semua generasi.
+                </p>
+            </article>
+            <section style="margin-top: 20px;">
+                <div style="text-align: center;">
+                    <h3>Tata Cara Menggunakan Edusama</h3>
+                    <span><img src="assets/1.png" alt=""><p>Cari Buku Yang Pengguna Inginkan </p></span>
+                    <span><img src="assets/2.png" alt=""><p>Pengguna dapat memilih buku tertentu untuk membaca atau mendownload</p></span>
+                    <span><img src="assets/3.png" alt=""><p>Pengguna dapat membaca buku langsung di browser atau mengunduhnya dalam format PDF sesuai pilihannya.</p></span>
+                </div>
+            </section>
+            
+            <section style="margin-top: 20px;">
+                <h2><center>Buku Terpopuler</center></h2>
+                <div class="card-image" style="display: flex; justify-content: space-between;">
+                    <!-- Card 1 -->
+                    <div class="card" style="flex: 1; margin-right: 20px;">
+                        <div class="card-image" style="background-image: url('assets/gambar2.png'); height: 200px;">
+                            <!-- Isi Card 1 -->
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card" style="flex: 1; margin-right: 10px;">
+                        <div class="card-image" style="background-image: url('assets/gambar1.png'); height: 200px;">
+                            <!-- Isi Card 2 -->
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card" style="flex: 1;">
+                        <div class="card-image" style="background-image: url('assets/gambar3.png'); height: 200px;">
+                            <!-- Isi Card 3 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-top: 20px;">
+                <h3>Pertanyaan yang Sering Ditanyakan</h3>
+                <ul>
+                    <li class="dropdown">
+                        <span><b>Apa itu buku di Edusama?</b></span>
+                        <div class="dropdown-content">
+                            <p>Buku di Edusama adalah koleksi buku digital yang dapat diakses secara online.</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span><b>Bagaimana cara mendaftar di Edusama?</b></span>
+                        <div class="dropdown-content">
+                            <>Anda dapat mendaftar di Edusama dengan mengunjungi situs web</
+                                <p>kami dan mengikuti langkah-langkah pendaftaran yang tersedia.</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span><b>Siapakah Pelaku Perbukuan?</b></span>
+                        <div class="dropdown-content">
+                            <p>Pelaku Perbukuan adalah individu atau entitas yang terlibat dalam industri penerbitan dan penjualan buku.</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span><strong>Mengapa saya tidak menerima email konfirmasi setelah mendaftar?</strong></span>
+                        <div class="dropdown-content">
+                            <p>Ada beberapa alasan mengapa Anda mungkin tidak menerima email konfirmasi setelah mendaftar,</p>
+                            <p>seperti masuknya email ke folder spam atau kesalahan dalam memasukkan alamat email.</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <Apakah><b>Apakah saya boleh mencetak buku yang ada di Edusama?</b></span>
+                        <div class="dropdown-content">
+                            <p>Kebijakan mencetak buku dari Edusama dapat berbeda-beda tergantung pada </p>
+                            <p>lisensi buku tersebut. Pastikan untuk memeriksa ketentuan penggunaan sebelum mencetak buku.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </main>
+    <footer style="background-color: #F3F3F3; padding: 20px; text-align: center;">
+        <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="footer-column" style="flex: 1; margin: 10px;">
+                <h4 style="margin-bottom: 10px;">Edusama</h4>
+                <p style="margin: 5px 0;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca.</p>
+            </div>
+            <div class="footer-column" style="flex: 1; margin: 10px;">
+                <h4 style="margin-bottom: 10px;">Company</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 5px;"><a href="#">About Us</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Services</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" style="flex: 1; margin: 10px;">
+                <h4 style="margin-bottom: 10px;">Support</h4>
+                <img src="qrcode.png" alt="QR Code" class="qrcode" style="width: 100px; margin-top: 10px;">
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 5px;"><a href="#">Donate</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Help</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" style="flex: 1; margin: 10px;">
+                <h4 style="margin-bottom: 10px;">Links</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 5px;"><a href="#">Buku</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Katalog</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#">Populer</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" style="flex: 1; margin: 10px;">
+                <h4 style="margin-bottom: 10px;">Contact Us</h4>
+                <p style="margin: 5px 0;">0859 9343 2343</p>
+                <p style="margin: 5px 0;">edusama@gmail.com</p>
             </div>
         </div>
-    </nav>
-
-    <script>
-        // JavaScript untuk menampilkan dropdown saat dihover
-        document.querySelector('.dropdown').addEventListener('mouseover', function() {
-            document.querySelector('.dropdown-content').style.display = 'block';
-        });
-
-        document.querySelector('.dropdown').addEventListener('mouseout', function() {
-            document.querySelector('.dropdown-content').style.display = 'none';
-        });
-    </script>
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+        <div class="copyright" style="font-size: 12px;">
+            <p>Copyright © 2024 Edusama. All rights reserved.</p>
+            <p><a href="#">Privacy</a>, <a href="#">Term Of Use</a>, <a href="#">Site Map</a></p>
+        </div>
+    </footer>
+    
 </body>
 </html>
