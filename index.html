@@ -1,135 +1,286 @@
 <!DOCTYPE l>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edusama</title>
-    <style>
-        
-        .dropdown-content {
-            display: none;
-            padding-left: 20px;
-        }
-    
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .main-slider .container {
-            padding-top: 143px;
-        }
-    
-        .main-slider-two .container {
-            padding-top: 343px;
-            padding-bottom: 160px;
-        }
-        .main-slider-three .container {
-            padding-top: 258px;
-            padding-bottom: 260px;
-           
-        }
-        .main-slider-three .main-slider__content {
-            position: relative;
-            display: block;
-            text-align: left;
-            font-size:18px;
-            padding-left: 100px;
-          }
-    
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    
-        li {
-            margin-bottom: 10px;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          color: var(--wostin-black);
-          margin: 0;
-          font-family: var(--wostin-font-two);
-          margin-bottom: 20px;
-        }
-        h3 {
-            margin-bottom: 20px;
-        }
-        .welcome__left {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-    
-        .welcome__right {
-            max-width: 600px;
-            margin: 50px auto 0;
-        }
-    
-        .welcome {
-            position: relative;
-            display: block;
-            padding: 0 0 120px;
-          }
-          
-          .welcome__left {
-            position: relative;
-            display: block;
-            margin-right: 100px;
-            margin-top: -300px;
-          }
-          .welcome__text-2 {
-            padding-top: 0 ; 
-            padding-bottom: 0px; 
-            padding-left: -1000px;
-            padding-right: 0px;
-          }
-          .welcome__img {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            height: 500px;
-          }
-    </style>
-</head>
-<body style="margin: 0; font-family: Arial, sans-serif; background-color:#F3F5FF;">
-    <header>
-        <nav class="navbar" style="background-color: #ffffff; color: #000000; padding: 10px 0; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-            <div class="container" style="display: flex; margin-left: 10px; justify-content: space-between; align-items: center;">
-                <a href="#" class="logo" style="color: #000000; font-size: 24px; text-decoration: none;">
-                    <img src="assets/Main 9.png" alt="" style="vertical-align: middle;">Edusama
-                    <div style="margin-left: 66px; margin-top: -10px;">
-                        <span style="font-size: 16px;">Edukasi Bersama</span>
-                    </div>
-                </a>
-                <ul class="menu" style="list-style-type: none; margin: 0; padding: 0;">
-                    <li style="display: inline-block; margin-right: 20px;">
-                        <a href="index.html" style="color: #000000; text-decoration: none;">Beranda</a>
-                    </li>
-                    <li class="dropdown" style="display: inline-block; margin-right: 20px; position: relative;">
-                        <a href="katalog.html" class="dropbtn" style="color: #000000; text-decoration: none;">Katalog</a>
-                        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; z-index: 1;">
-                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Pendidikan</a>
-                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Sains</a>
-                            <a href="notfound.html" style="color: #000000; padding: 12px 16px; display: block; text-decoration: none;">Teknologi</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edusama</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .dropdown {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #F3F5FF;
+                min-width: 200px;
+                padding: 10px;
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; font-family: Arial, sans-serif; background-color:#F3F5FF;">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/Main 9.png" alt="" style="vertical-align: middle;">Edusama
+                        <div style="margin-left: 66px; margin-top: -10px;">
+                            <span style="font-size: 16px;">Edukasi Bersama</span>
                         </div>
-                    </li>
-                    <li style="display: inline-block; margin-right: 20px;">
-                        <a href="notfound.html" style="color: #000000; text-decoration: none;">Tentang Kami</a>
-                    </li>
-                </ul>
-                <div class="buttons" style="display: flex; align-items: center;">
-                    <a href="notfound.html" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
-                    <a href="notfound.html" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
-                    <a href="notfound.html">
-                        <button class="subscribe-btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #000000; cursor: pointer;">Langganan</button>
                     </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/index.html' ? 'active' : ''); ?>" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle <?php echo ($_SERVER['REQUEST_URI'] == '/katalog.html' ? 'active' : ''); ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Katalog
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="katalog.html">Pendidikan</a>
+                                    <a class="dropdown-item" href="notfound.html">Sains</a>
+                                    <a class="dropdown-item" href="notfound.html">Teknologi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/tentang.html' ? 'active' : ''); ?>" href="tentang.html">Tentang Kami</a>
+                            </li>
+                        </ul>
+                        <div class="buttons" style="display: flex; align-items: center;">
+                            <a href="notfound.html" class="login-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Masuk</a>
+                            <a href="notfound.html" class="signup-btn" style="margin-left: 20px; padding: 10px 20px; text-decoration: none; color: #000000; border: none; cursor: pointer;">Daftar</a>
+                            <a href="notfound.html">
+                                <button class="subscribe-btn btn" style="margin-left: 20px; padding: 10px 20px; background-color: #ff4800; border: 2px solid #fff; text-decoration: none; color: #ffffff; cursor: pointer;">Langganan</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main style="display: flex;color: #6F50F8; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <section class="main-slider main-slider-three">
+                <section style="margin-top: 100px;">
+                <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": false, "effect": "fade", "pagination": {"el": "#main-slider-pagination", "type": "bullets", "clickable": true }, "navigation": {"nextEl": "#main-slider__swiper-button-next", "prevEl": "#main-slider__swiper-button-prev" }, "autoplay": {"delay": 5000 }}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-slider-three-bg" style="background-image: url(assets/images/backgrounds/main-slider-3-bg.jpg);">
+                            </div>
+                            <div class="main-slider-three-building">
+                                <img src="assets/images/resources/main-slider-three-building.png" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-7">
+                                        <div  class="main-slider__content">
+                                            <h5 style="font-size: 25px;">Mari Membaca Buku</h5>
+                                            <h2 style="font-size: 45px">Bangun Dunia Untuk<br> Generasi Emas</h2>
+                                            <p>Berbagi buku tentang kehidupan dan pengalaman<br> dengan orang lain. Itu adalah catatan seumur hidup untuk semua generasi.</p>
+                                            <form style="margin-top: 50px;">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Cari buku...">
+                                                            <button class="btn btn-warning" type="button">Cari</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>  
+                                    <div class="col-xl-5"> <!-- Changed col-xl-6 to col-xl-5 to maintain column grid -->
+                                        <div class="main-slider__img">
+                                            <img src="assets/gambar.png" alt="" style="height:450px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                </section>         
+                <section style="margin-top: 150px;">
+                    <div class="container text-center">
+                        <section id="header-about">
+                            <h2 style="margin-top: 50px; margin-bottom: 50px; font-weight: 800; font-family: Arial, Helvetica, sans-serif;">Tentang Edusama</h2>
+                            <p class="box-header" style="background-color: var(--wostin-white); color: #6F50F8; border: 2px solid rgb(238, 216, 216); border-radius: 35px; padding: 30px; font-size: 25px;">
+                                Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Plaform ini bertujuan untuk meningkatkan minat baca, khususnya bagi orang Indonesia yang mungkin masih belum bisa untuk membeli buku-buku karena keterbatasan finansial.
+                            </p>
+                        </section>
+                    </div>
+                </section>
+                <section style="margin-top: 150px; display: flex; justify-content: space-between;">
+                    <div style="text-align: center; flex-basis: 30%;">
+                        <img src="assets/1.png" alt="">
+                        <p>Cari Buku Yang Pengguna Inginkan</p>
+                    </div>
+                    <div style="text-align: center; flex-basis: 30%;">
+                        <img src="assets/2.png" alt="">
+                        <p>Pengguna dapat memilih buku tertentu untuk membaca atau mendownload</p>
+                    </div>
+                    <div style="text-align: center; flex-basis: 30%;">
+                        <img src="assets/3.png" alt="">
+                        <p>Pengguna dapat membaca buku langsung di browser atau mengunduhnya dalam format PDF sesuai pilihannya.</p>
+                    </div>
+                </section>            
+                <section style="margin-top: 150px;" class="industries-page industries-page--carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-title text-center">
+                                    <h2 style="margin-top: 50px; margin-bottom: 80px; font-weight: 800; font-family: Arial, Helvetica, sans-serif;">Buku Terpopuler</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-3">
+                                <div class="item">
+                                    <div class="industries-one__single">
+                                        <div class="industries-one__img">
+                                            <img src="assets/gambar2.png" class="img-fluid" style="max-width: 100%; height: 400px;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I">
+                                        </div>
+                                        <div class="industries-one__content text-center">
+                                            <h4 class="industries-one__title" style="margin-top: 20px;">Lets Learn English</h4>
+                                            <p class="industries-one__type">Jenis: Audio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="item">
+                                    <div class="industries-one__single">
+                                        <div class="industries-one__img">
+                                            <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" class="img-fluid" style="max-width: 100%; height: 400px;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I">
+                                        </div>
+                                        <div class="industries-one__content text-center">
+                                            <h4 class="industries-one__title" style="margin-top: 20px;">Buku Bahasa Indonesia</h4>
+                                            <p class="industries-one__type">Jenis: pdf</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="item">
+                                    <div class="industries-one__single">
+                                        <div class="industries-one__img">
+                                            <img src="assets/gambar3.png" class="img-fluid" style="max-width: 100%; height: 400px;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I">
+                                        </div>
+                                        <div class="industries-one__content text-center">
+                                            <h4 class="industries-one__title" style="margin-top: 20px;">PAI Budi Pekerti</h4>
+                                            <p class="industries-one__type">Jenis: pdf</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container" style="margin-top: 150px; margin-bottom: 150px;">
+                    <h2 style="margin-top: 50px; margin-bottom: 50px; font-weight: 800; font-family: Arial, Helvetica, sans-serif;">Pertanyaan yang sering ditemui</h2>
+                    <ul class="list-unstyled">
+                        <li class="dropdown">
+                            <span><b>Apa itu buku di Edusama?</b></span>
+                            <div class="dropdown-content">
+                                <p>Buku di Edusama adalah koleksi buku digital yang dapat diakses secara online.</p>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span><b>Bagaimana cara mendaftar di Edusama?</b></span>
+                            <div class="dropdown-content">
+                                <p>Anda dapat mendaftar di Edusama dengan mengunjungi <br>situs web kami dan mengikuti langkah-langkah pendaftaran yang tersedia.</p>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span><b>Siapakah Pelaku Perbukuan?</b></span>
+                            <div class="dropdown-content">
+                                <p>Pelaku Perbukuan adalah individu atau entitas yang <br>terlibat dalam industri penerbitan dan penjualan buku.</p>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span><strong>Mengapa saya tidak menerima email konfirmasi setelah mendaftar?</strong></span>
+                            <div class="dropdown-content">
+                                <p>Ada beberapa alasan mengapa Anda mungkin tidak <br>menerima email konfirmasi setelah mendaftar, seperti masuknya email <br>ke folder spam atau kesalahan dalam memasukkan alamat email.</p>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span><b>Apakah saya boleh mencetak buku yang ada di Edusama?</b></span>
+                            <div class="dropdown-content">
+                                <p>Kebijakan mencetak buku dari Edusama dapat berbeda-beda <br> tergantung pada lisensi buku tersebut. Pastikan untuk memeriksa <br> ketentuan penggunaan sebelum mencetak buku.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+        </main>
+        <footer class="bg-light py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/Main 9.png" alt="Edusama Logo" style="height: 40px;">
+                            <h1 class="ml-3 mb-0">Edusama</h1>
+                        </div>
+                        <p class="mt-3" style="text-align: justify;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca.</p>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h4 class="mb-3">Company</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">About Us</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Services</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Testimonial</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h4 class="mb-3">Support</h4>
+                        <img src="assets/qrcode.png" alt="QR Code" class="img-fluid mb-3" style="width: 100px;">
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Donate</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Help</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h4 class="mb-3">Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Buku</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Katalog</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">Populer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h4 class="mb-3">Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">0859 9343 2343</a></li>
+                            <li><a href="#" style="color: #6c757d; text-decoration: none;">edusama@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="d-flex justify-content-between">
+                    <div>&copy; 2024 Edusama. All rights reserved.</div>
+                    <div>
+                        <a href="#" style="color: #6c757d; text-decoration: none;">Privacy</a>, 
+                        <a href="#" style="color: #6c757d; text-decoration: none;">Term Of Use</a>, 
+                        <a href="#" style="color: #6c757d; text-decoration: none;">Site Map</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        
-
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
             // JavaScript untuk menampilkan dropdown saat dihover
             document.querySelector('.dropdown').addEventListener('mouseover', function() {
@@ -140,248 +291,5 @@
                 document.querySelector('.dropdown-content').style.display = 'none';
             });
         </script>
-    </header>
-    <main style="display: flex;color: #6F50F8; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-       
-        <section class="main-slider main-slider-three">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": false,
-                "effect": "fade",
-                "pagination": {
-                "el": "#main-slider-pagination",
-                "type": "bullets",
-                "clickable": true
-                },
-                "navigation": {
-                "nextEl": "#main-slider__swiper-button-next",
-                "prevEl": "#main-slider__swiper-button-prev"
-                },
-                "autoplay": {
-                "delay": 5000
-                }}'>
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="main-slider-three-bg"
-                            style="background-image: url(assets/images/backgrounds/main-slider-3-bg.jpg);">
-                        </div>
-                        <div class="main-slider-three-building">
-                            <img src="assets/images/resources/main-slider-three-building.png" alt="">
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-7">
-                                    <div class="main-slider__content">
-                                        <h5 style="font-size: 25px;">Mari Membaca Buku</h5>
-                                        <h2 style="font-size: 45px">Bangun Dunia Untuk<br> 
-                                            Generasi Emas</h2>
-                                        <p>Berbagi buku tentang kehidupan dan pengalaman<br> 
-                                            dengan orang lain. Itu adalah catatan seumur hidup 
-                                            untuk semua generasi.</p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="welcome__left">
-                                        <div>
-                                            <div class="welcome__img">
-                                                <img src="/assets/gambar.png" alt="" style="height:450px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            <section style="margin-top: -150px; ">
-                <div style="text-align: center;">
-                    <!-- <h2 style="margin-bottom: 10px;">Tentang Edusama</h2> -->  
-                    <section id="header-about">
-                        <h2 style="text-align: center;margin-top:50px;margin-bottom:50px;font-weight: 800;font-family: Arial, Helvetica, sans-serif;">Tentang Edusama</h2>
-                        <p class="box-header" style="background-color:var(--wostin-white);color: #6F50F8;border:  2px solid rgb(238, 216, 216); border-radius: 35px; padding: 10px; text-align:center; margin-left:250px;margin-right:250px;margin-top:15px;font-size:25px;padding:30px;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Plaform ini bertujuan untuk meningkatkan minat baca, khususnya bagi orang indonesia yang mungkin masih belum bisa untuk membeli buku-buku karena keterbatasan finansial.</p>
-                    </section>
-                    </p>
-                </div>
-            </section>
-            <section style="margin-top: 20px; display: flex; justify-content: space-between;">
-                <div style="text-align: center; flex-basis: 30%;">
-                    <img src="assets/1.png" alt="">
-                    <p>Cari Buku Yang Pengguna Inginkan</p>
-                </div>
-                <div style="text-align: center; flex-basis: 30%;">
-                    <img src="assets/2.png" alt="">
-                    <p>Pengguna dapat memilih buku tertentu untuk membaca atau mendownload</p>
-                </div>
-                <div style="text-align: center; flex-basis: 30%;">
-                    <img src="assets/3.png" alt="">
-                    <p>Pengguna dapat membaca buku langsung di browser atau mengunduhnya dalam format PDF sesuai pilihannya.</p>
-                </div>
-            </section>
-            
-            <section class="industries-page industries-page--carousel">
-                <div class="container">
-                    <div class="thm-owl__carousel owl-carousel owl-theme owl-with-shadow owl-dots__style-1"
-                        data-owl-options='{
-                        "loop": true,
-                        "items": 1,
-                        "autoplay": true,
-                        "margin": 30,
-                        "nav": false,
-                        "dots": true,
-                        "smartSpeed": 500,
-                        "autoplayTimeout": 5000,
-                        "responsive": {
-                            "0": {
-                                "items": 1
-                            },
-                            "768": {
-                                "items": 2
-                            },
-                            "992": {
-                                "items": 3
-                            }
-                        }
-                    }'>
-                <div style="padding: 0 0 100px 100px;">
-                    <div class="section-title text-center">
-                        <h2 class="section-title__title">Rekomendasi Buku</h2>
-                    </div>
-                    <br>
-                    <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 50px;">
-                        <div class="item">
-                            <div class="industries-one__single">
-                                <div class="industries-one__img">
-                                   <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="industries-one__single">
-                                <div class="industries-one__img">
-                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="industries-one__single">
-                                <div class="industries-one__img">
-                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="industries-one__single">
-                                <div class="industries-one__img">
-                                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" style="width: 300px; height: auto;" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>	  
-            <section style="margin-top: 20px;">
-                <h3>Pertanyaan yang Sering Ditanyakan</h3>
-                <ul>
-                    <li class="dropdown">
-                        <span><b>Apa itu buku di Edusama?</b></span>
-                        <div class="dropdown-content">
-                            <p>Buku di Edusama adalah koleksi buku digital yang dapat diakses secara online.</p>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span><b>Bagaimana cara mendaftar di Edusama?</b></span>
-                        <div class="dropdown-content">
-                            <kami>Anda dapat mendaftar di Edusama dengan mengunjungi situs web <br> kami dan mengikuti langkah-langkah pendaftaran yang tersedia.</p>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span><b>Siapakah Pelaku Perbukuan?</b></span>
-                        <div class="dropdown-content">
-                            <p>Pelaku Perbukuan adalah individu atau entitas yang terlibat dalam industri penerbitan dan penjualan buku.</p>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span><strong>Mengapa saya tidak menerima email konfirmasi setelah mendaftar?</strong></span>
-                        <div class="dropdown-content">
-                            <p>Ada beberapa alasan mengapa Anda mungkin tidak menerima email konfirmasi setelah mendaftar,</p>
-                            <p>seperti masuknya email ke folder spam atau kesalahan dalam memasukkan alamat email.</p>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <Apakah><b>Apakah saya boleh mencetak buku yang ada di Edusama?</b></span>
-                        <div class="dropdown-content">
-                            <p>Kebijakan mencetak buku dari Edusama dapat berbeda-beda tergantung pada </p>
-                            <p>lisensi buku tersebut. Pastikan untuk memeriksa ketentuan penggunaan sebelum mencetak buku.</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </main>
-    <footer style="background-color: #F3F3F3; padding: 20px; text-align: center;">
-        <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div class="footer-column" style="flex: 1; margin: 10px;">
-                <div style ="display: inline-grid;grid-template-columns:auto;">
-                <img src="assets/Main 9.png" alt="" style="vertical-align: middle ; height: 100%;"><h1 style="margin-top: -30px; margin-left: 30px;">Edusama</h1>
-                    <div style="margin-left: 240px; margin-top: -15px;">
-                        <span style="font-size: 15px;"></span>
-                    </div>
-                </div>
-               
-                <p style="text-align:justify; margin: 5px 15;">Edusama merupakan sebuah platform yang berbasis web dan Mobile. Platform ini menyediakan buku-buku digital (E-book) yang dapat diakses secara gratis oleh semua orang. Platform ini bertujuan untuk meningkatkan minat baca.</p>
-            </div>
-            <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;">Company</h4>
-                <ul style="list-style-type: none; padding:0;">
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">About Us</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Services</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Testimonial</a></li>
-                </ul>
-            </div>
-            <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;">Support</h4>
-                <img src="assets/qrcode.png" alt="QR Code" class="qrcode" style="width: 100px; margin-top: 10px;">
-                <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Donate</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Help</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Feedback</a></li>
-                </ul>
-            </div>
-            <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;">Links</h4>
-                <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Buku</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Katalog</a></li>
-                    <li style="margin-bottom: 5px;padding: 5px;"><a href="#">Populer</a></li>
-                </ul>
-            </div>
-            <div class="footer-column" style="flex: 1; margin: 10px;">
-                <h4 style="margin-bottom: 10px;padding: 5px;">Contact Us</h4>
-                <p style="margin: 5px 0;padding: 5px;">0859 9343 2343</p>
-                <p style="margin: 5px 0;padding: 5px;">edusama@gmail.com</p>
-            </div>
-        </div>
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #070606;">
-        <div class="copyright" style="font-size: 12px;">
-            <table></table>
-            <div style="text-align:left;">Copyright © 2024 Edusama. All rights reserved. </div>
-            
-            <div style="text-align:right;"><a href="#">Privacy</a>, <a href="#">Term Of Use</a>, <a href="#">Site Map</a></div> 
-        </div>
-    </footer>
-    
-</body>
-</html>
-    <script>
-        // JavaScript untuk menampilkan dropdown saat dihover
-        document.querySelector('.dropdown').addEventListener('mouseover', function() {
-            document.querySelector('.dropdown-content').style.display = 'block';
-        });
-
-        document.querySelector('.dropdown').addEventListener('mouseout', function() {
-            document.querySelector('.dropdown-content').style.display = 'none';
-        });
-    </script>
-</body>
+    </body>
 </html>
