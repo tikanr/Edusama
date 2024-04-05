@@ -9,6 +9,72 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      
+        .box-card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          
+          .box-card__image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+          
+          .box-card__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          .box-card__content {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          
+          .box-card__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+          }
+          
+          .box-card__text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+          }
+          
+          .box-card__button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          
+          .box-card__button:hover {
+            background-color: #0062cc;
+          }
+          
+    </style>
+    
 </head>
 <body style="margin: 0; font-family: Arial, sans-serif; background-color:#F3F5FF;">
     <header>
@@ -64,86 +130,89 @@
             document.querySelector('.dropdown-content').style.display = 'none';
         });
     </script>
+    <section style="margin-top: 50px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7" style="padding-right: 5px;">
+              <section id="header-about">
+                <h3>Filter Kategori</h3>
+                <div class="box-card">
+                  <div class="box-card__content">
+                    <div style="float: left; width: 50%;">
+                      <h4>Tipe Buku</h4>
+                      <form>
+                        <label for="pendidikan"><input type="checkbox" id="pendidikan" name="kategori" value="Pendidikan" />Pendidikan</label><br>
+                        <label for="sains"><input type="checkbox" id="sains" name="kategori" value="Sains" />Sains</label><br>
+                        <label for="teknologi"><input type="checkbox" id="teknologi" name="kategori" value="Teknologi" />Teknologi</label>
+                      </form>
+                      <h4>Jenjang</h4>
+                      <form>
+                        <label for="paud"><input type="checkbox" id="paud" name="kategori" value="paud" />PAUD</label><br>
+                        <label for="sd"><input type="checkbox" id="sd" name="kategori" value="sd" />SD / MI</label><br>
+                        <label for="smp"><input type="checkbox" id="smp" name="kategori" value="smp" />SMP / MTS</label><br>
+                      </form>
+                    </div>
+                    <div style="float: left; width: 50%;">
+                      <form>
+                        <label for="kategori"><b>Kategori:</b></label>
+                        <select id="kategori" name="kategori">
+                          <option value="pendidikan">Pendidikan</option>
+                          <option value="sains">Sains</option>
+                          <option value="teknologi">Teknologi</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-xl-5" style="padding-left:1px; padding-bottom: 50px">
+              <section>
+                <h3>Rekomendasi Buku</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                  <div>
+                    <a href="detailbuku.html">
+                      <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" width="250" height="320">
+                      <p style="font-size: 12px;">Bahasa Indonesia kelas XI</p>
+                      <div class="online-box">
+                      <a class="download-link" href="unduh-buku-pdf-bahasa-indonesia-kelas-xi.pdf">Unduh PDF</a>
+                      <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Baca Online</a>
+                    </div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/IPS-BS-KLS-VIII-cover.png" alt="Ilmu Pengetahuan Sosial untuk SMP Kelas VIII" width="250" height="320">
+                    <p style="font-size: 12px;">Ilmu Pengetahuan Sosial XI</p>
+                    <div class="online-box">
+                    <a class="download-link" href="unduh-buku-pdf-bahasa-indonesia-kelas-xi.pdf">Unduh PDF</a>
+                    <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Baca Online</a>
+                  </div>
+                </div>
+                  <div>
+                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/IPAS_BS_KLS_IV_Rev_Cover.png" alt="Buku Ilmu Pengetahuan Alam dan Sosial untuk SD/MI Kelas IV (Edisi Revisi)" width="250" height="320">
+                    <p style="font-size: 12px;">Ilmu Pengetahuan Alam dan Sosial</p>
+                    <div class="online-box">
+                    <a class="download-link" href="unduh-buku-pdf-bahasa-indonesia-kelas-xi.pdf">Unduh PDF</a>
+                    <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Baca Online</a>
+                  </div>  
+                </div>
+                  <div>
+                    <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Biologi-BS-KLS-XI-Cover.png" alt="Biologi untuk SMA/MA Kelas XI" width="250" height="320">
+                    <p style="font-size: 12px;">Biologi</p>
+                    <div class="online-box">
+                    <a class="download-link" href="unduh-buku-pdf-bahasa-indonesia-kelas-xi.pdf">Unduh PDF</a>
+                    <a class="download-link" href="baca-buku-online-bahasa-indonesia-kelas-xi.html">Baca Online</a>
+                  </div>  
+                </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
-    <aside class="sidebar">
-        <h3>Filter Kategori</h3>
-        <h4>Tipe Buku</h4>
-        <form>
-          <label for="pendidikan"
-            ><input
-              type="checkbox"
-              id="pendidikan"
-              name="kategori"
-              value="Pendidikan"
-            />
-            Pendidikan</label
-          >
-          <label for="sains"
-            ><input type="checkbox" id="sains" name="kategori" value="Sains" />
-            Sains</label
-          >
-          <label for="teknologi"
-            ><input
-              type="checkbox"
-              id="teknologi"
-              name="kategori"
-              value="Teknologi"
-            />
-            Teknologi</label
-          >
-        <h4>Jenjang</h4>
-        <form>
-          <label for="paud"
-            ><input
-              type="checkbox"
-              id="paud"
-              name="kategori"
-              value="paud"
-            />
-            PAUD</label>
-            <label for="sd"
-              ><input type="checkbox" id="sd" name="kategori" value="sd" />
-              SD / MI</label
-            >
-            <label for="smp"
-              ><input
-                type="checkbox"
-                id="smp"
-                name="kategori"
-                value="smp"
-              />
-              SMP / MTS</label
-            >
-          </form>
-          <form>
-            <label for="kategori"><b>Kategori:</b></label>
-            <select id="kategori" name="kategori">
-              <option value="pendidikan">Pendidikan</option>
-              <option value="sains">Sains</option>
-              <option value="teknologi">Teknologi</option>
-            </select>
-          </form>
-        </aside>  
-    <div style="padding: 0 0 100px 100px;">
-        <h3>Rekomendasi Buku</h3>
-        <br>
-        <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 50px;">
-            <div>
-    <a href="detailbuku.html">
-                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Bahasa_Indonesia_BS_KLS_I_Rev_Cover.png" alt="Buku Bahasa Indonesia untuk SD/MI Kelas I" width="250" height="320">
-        </a>
-            </div>
-            <div>
-                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/IPS-BS-KLS-VIII-cover.png" alt="Ilmu Pengetahuan Sosial untuk SMP Kelas VIII" width="250" height="320">
-            </div>
-            <div>
-                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/IPAS_BS_KLS_IV_Rev_Cover.png" alt="Buku Ilmu Pengetahuan Alam dan Sosial untuk SD/MI Kelas IV (Edisi Revisi)" width="250" height="320">
-            </div>
-            <div>
-                <img src="https://static.buku.kemdikbud.go.id/content/image/coverteks/coverkurikulum21/Biologi-BS-KLS-XI-Cover.png" alt="Biologi untuk SMA/MA Kelas XI" width="250" height="320">
-            </div>
-        </div>
-    </div>
 <footer class="bg-light py-4">
     <div class="container">
         <div class="row">
@@ -200,8 +269,15 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript untuk menampilkan dropdown saat dihover
+    document.querySelector('.dropdown').addEventListener('mouseover', function() {
+        document.querySelector('.dropdown-content').style.display = 'block';
+    });
+
+    document.querySelector('.dropdown').addEventListener('mouseout', function() {
+        document.querySelector('.dropdown-content').style.display = 'none';
+    });
+</script>
 </body>
 </html>
-
-
-    
